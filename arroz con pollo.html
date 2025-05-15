@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Delicious Happy</title>
+		<link rel="icon" href="https://foodiex-yz.netlify.app/img/favicon.ico">
+        <script src="java.script"></script>
+		<link rel="stylesheet"
+        
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<span class="logo">
+				<a href="/">Delicious Happy</a>
+			</span>
+
+			<nav class="navigation-header">
+				<a href="index.html">Inicio</a>
+				<a href="dieta.html">Recetas</a>
+				<a href="reservas.html">Reservaciones</a>
+				<a href="fisne.html">Contacto</a>
+                <a href="marcus.html">Mision,Vision y Valores</a>
+				<a href="beutifull.html">Nosotros</a>
+			</nav>
+
+			<ul class="social-links">
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+				</li>
+
+				<a href="carrito.html">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</a>
+			</li>
+
+			</ul>
+
+			<button class="btn-menu-responsive">
+				<i class="fa-solid fa-bars-staggered"></i>
+			</button>
+
+			<div class="menu-mobile">
+				<div class="btn-close">
+					<i class="fa-solid fa-x"></i>
+				</div>
+				<span class="logo">
+					<a href="/">Delicious Happy</a>
+				</span>
+
+			
+                <nav class="navigation-header">
+                    <a href="index.html">Inicio</a>
+                    <a href="dieta.html">Recetas</a>
+                    <a href="reservas.html">reservaciones</a>
+                    <a href="fisne.html">Contacto</a>
+                    <a href="marcus.html">Mision,Vision y Valores</a>
+                    <a href="beutifull.html">Nosotros</a>
+                    
+                </nav>
+        
+
+
+
+
+
+
+				<ul class="social-links">
+					<li>
+						<a href="#">
+							<i class="fa-brands fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-brands fa-whatsapp"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+		
+
+
+<!-- Barra de búsqueda -->
+<div class="search-container">
+    <input type="text" id="searchBar" placeholder="Buscar productos..." onkeyup="searchProducts()">
+</div>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+<section class="container section-banner-hero">
+	<div class="carousel">
+		<div class="carousel-item active">
+			<div class="content">
+				<span class="badge-hot-recipes">
+					<i class="fa-solid fa-fire-flame-curved"></i>
+					Recetas Calientes
+				</span>
+
+				<h1>Alitas de pollo picantes</h1>
+
+				<p>
+					“Crujientes, sabrosas y perfectamente condimentadas:
+					Disfrute de la receta definitiva de deliciosas alitas de
+					pollo que le dejarán con ganas de más”
+				</p>
+
+				<div class="badges">
+					<span>
+						<i class="fa-solid fa-clock"></i>
+						30 minutos
+					</span>
+					
+				</div>
+			</div>
+			<div class="container-img">
+				<img
+					src="https://foodiex-yz.netlify.app/img/img-banner-hero.webp"
+					alt="Imagen Banner Hero"
+				/>
+			</div>
+		</div>
+
+		<div class="carousel-item">
+			<div class="content">
+				<span class="badge-hot-recipes">
+					<i class="fa-solid fa-fire-flame-curved"></i>
+					Recetas Frías
+				</span>
+
+				<h1>Ensalada César</h1>
+
+				<p>
+					“Fresca, crujiente y llena de sabor: 
+					La ensalada César es un clásico que nunca pasa de moda.”
+				</p>
+
+				<div class="badges">
+					<span>
+						<i class="fa-solid fa-clock"></i>
+						15 minutos
+					</span>
+				</div>
+			</div>
+			<div class="container-img">
+				<img
+					src="https://i.pinimg.com/236x/63/00/cc/6300ccb8fb4fd98e774e0766a51a8465.jpg"
+					alt="Imagen Banner Hero"
+				/>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	
+	  
+	<button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+<button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+
+
+
+
+</section>
+
+
+
+<div class="list-card-recipes">
+    <div class="card-recipe">
+        <div class="container-img">
+            <img src="https://i.pinimg.com/736x/91/11/7a/91117a5d643012e8ff57704cb8035dbd.jpg" alt="Imagen Receta" />
+            <button class="btn-favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="content">
+            <h3>Un delicioso locrio de pollo</h3>
+
+            <div class="footer">
+                <span class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    30 minutos
+                </span>
+                <span class="category">
+                    <i class="fa-solid fa-utensils"></i>
+                    Desayuno
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="card-recipe">
+        <div class="container-img">
+            <img src="https://i.pinimg.com/736x/06/2c/bc/062cbc14851fdc85bc353c21f54e1abb.jpg" alt="Imagen Receta" />
+            <button class="btn-favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="content">
+            <h3>un locrio de pollo con vegetales.</h3>
+
+            <div class="footer">
+                <span class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    30 minutos
+                </span>
+                <span class="category">
+                    <i class="fa-solid fa-utensils"></i>
+                    Pescado
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="card-recipe">
+        <div class="container-img">
+            <img src="https://i.pinimg.com/736x/46/49/ab/4649aba38f436d503074a4741d3751a5.jpg" alt="Imagen Receta" />
+            <button class="btn-favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="content">
+            <h3>Broccoli Rice Cheese and Chicken Casserole </h3>
+
+            <div class="footer">
+                <span class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    30 minutos
+                </span>
+                <span class="category">
+                    <i class="fa-solid fa-utensils"></i>
+                    Dulce
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="card-recipe">
+        <div class="container-img">
+            <img src="https://i.pinimg.com/736x/26/f0/5a/26f05afa76474085f88ebcb0c9ebd684.jpg" alt="Imagen Receta" />
+            <button class="btn-favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="content">
+            <h3> Garlic Chicken Fried Rice Recipe.</h3>
+
+            <div class="footer">
+                <span class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    30 minutos
+                </span>
+                <span class="category">
+                    <i class="fa-solid fa-utensils"></i>
+                  desayuno
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="card-recipe">
+        <div class="container-img">
+            <img src="https://i.pinimg.com/736x/81/9f/52/819f521c02e80a1bed62decb3d8e66f3.jpg" alt="Imagen Receta" />
+            <button class="btn-favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="content">
+            <h3>Garlic Chicken Fried Rice Recipe
+                .</h3>
+
+            <div class="footer">
+                <span class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    30 minutos
+                </span>
+                <span class="category">
+                    <i class="fa-solid fa-utensils"></i>
+                  desayuno
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="card-recipe">
+        <div class="container-img">
+            <img src="https://i.pinimg.com/736x/76/63/dd/7663dd5abcc53746af98231f3e49ab0a.jpg" alt="Imagen Receta" />
+            <button class="btn-favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+
+        <div class="content">
+            <h3>garlic butter chicken bites with roasted garlic broccoli rice.</h3>
+
+            <div class="footer">
+                <span class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    30 minutos
+                </span>
+                <span class="category">
+                    <i class="fa-solid fa-utensils"></i>
+                  desayuno
+                </span>
+            </div>
+        </div>
+    </div>
